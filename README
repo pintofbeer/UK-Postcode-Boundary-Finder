@@ -13,3 +13,5 @@ It has limitations, they are:
 	* It simply spits out CSV data into a console window, so to capture it simply pipe it into a text file.
 	* It is VERY slow, based on its current approximations I've cut it down to take roughly 3 days. There are no doubt many ways the code can be improved to speed it up further.#
 	* It is rough, postcode boundary points will not be that accurate but good enough as a guide to what area a sector covers, and for mapping combined postcode sectors. You'll notice that for sectors on the coast the boundary usually extends over the sea, this is a result of the algorythm and not easy to avoid.
+
+License: Free for NON COMMERCIAL use only
