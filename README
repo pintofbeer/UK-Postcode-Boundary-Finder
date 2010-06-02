@@ -1,1 +1,15 @@
-Welcome
+Postcode Mapper
+=============
+
+This is my first attempt at retrieving postcode sector boundaries from a list of raw postcode points found in Ordinance Survey's Code-Point Open dataset.
+
+To get it going simply download the Code-Point Open dataset from Ordinance Survey's website: http://opendata.ordnancesurvey.co.uk/
+
+Then modify the code to tell it where you've saved those CSV's, it simply needs the directory path.
+
+It has limitations, they are:
+
+	* It currently does not create polygons but rather a list of boundary points for each postal sector. The job of joining those points together to form the boundary still needs to be done.
+	* It simply spits out CSV data into a console window, so to capture it simply pipe it into a text file.
+	* It is VERY slow, based on its current approximations I've cut it down to take roughly 3 days. There are no doubt many ways the code can be improved to speed it up further.#
+	* It is rough, postcode boundary points will not be that accurate but good enough as a guide to what area a sector covers, and for mapping combined postcode sectors. You'll notice that for sectors on the coast the boundary usually extends over the sea, this is a result of the algorythm and not easy to avoid.
